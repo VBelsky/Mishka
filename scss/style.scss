@@ -1,3 +1,24 @@
-body {
-  background: red;
-}
+@charset 'utf-8';
+
+@import 'abstracts/variables';
+
+@import 'blocks/advantages';
+@import 'blocks/catalog';
+@import 'blocks/categories';
+@import 'blocks/contacts';
+@import 'blocks/main-banner';
+@import 'blocks/main-product';
+@import 'blocks/order-form';
+@import 'blocks/process';
+@import 'blocks/testimonials';
+
+@import 'components/buttons';
+@import 'components/copyright';
+@import 'components/inputs';
+@import 'components/logos';
+@import 'components/map';
+@import 'components/social';
+
+@import 'layout/page-footer';
+@import 'layout/page-header';
+@import 'layout/page-main';
