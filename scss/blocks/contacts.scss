@@ -1,3 +1,31 @@
+.contacts {
+  padding: 30px 0;
+}
+
 .contact-info__details {
   line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.contact-info__title {
+  margin-bottom: 40px;
+}
+
+.contact-details-table__email {
+  color: #444444;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 1px solid #62D1BA;
+  cursor: pointer;
+
+  &:hover {
+    color: #46c1ae;
+    border-bottom: 1px solid #46C1AE;
+  }
+
+  &:active {
+    color: rgba(70, 193, 174, 0.3);
+    border-bottom: 1px solid rgba(70, 193, 174, 0.3);
+  }
 }

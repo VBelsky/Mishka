@@ -2,8 +2,21 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: none;
 }
 
 .site-list__item-link {
   text-decoration: none;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.page-header__notification {
+  display: none;
 }
