@@ -13,10 +13,11 @@
   background-color: #63D1BB;
   border: none;
   bottom: 0;
-  left: -30px;
-  width: calc(100% + 60px);
+  width: 100%;
   padding: 30px;
   position: absolute;
+  transition: padding-bottom 0.1s;
+  cursor: pointer;
 
   &:hover,
   &:focus {

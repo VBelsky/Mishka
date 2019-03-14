@@ -1,0 +1,32 @@
+.catalog {
+  margin: 30px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item {
+  border: 1px solid #EDEDED;
+  margin-bottom: 30px;
+}
+
+.product__card-as-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product__info {
+  padding: 28px;
+}
+
+.product__description,
+.product__price {
+  margin: 0;
+}
+
+.product__price {
+  font-weight: 700;
+}

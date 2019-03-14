@@ -6,7 +6,6 @@
 
 body {
   margin: 0 auto;
-  padding: 0 30px;
   background-color: #ffffff;
   max-width: 320px;
   width: 100%;
@@ -26,4 +25,10 @@ img {
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+
+// Временно
+html {
+  background-color: black;
 }
