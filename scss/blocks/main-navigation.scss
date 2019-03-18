@@ -21,3 +21,34 @@
     color: rgba(0, 0, 0, 0.3);
   }
 }
+
+@media (min-width: 768px) {
+  .main-navigation {
+    margin-left: auto;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+
+  .site-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .site-list__item--main {
+    position: absolute;
+    bottom: -45px;
+    z-index: 1;
+    left: 50px;
+
+    &:nth-child(2) {
+      left: 217px;
+    }
+  }
+
+  .site-list__item--additional {
+    display: none;
+  }
+}

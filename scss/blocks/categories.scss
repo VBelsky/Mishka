@@ -46,3 +46,21 @@
     background-color: #46C1AE;
   }
 }
+
+@media (min-width: 768px) {
+  .categories {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 108px;
+  }
+
+  .categories__button {
+    width: 50%;
+  }
+
+  .categories__button--left {
+    bottom: 0;
+    right: 0;
+  }
+}

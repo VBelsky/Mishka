@@ -1,3 +1,7 @@
+.page-header__logo-link--alternative {
+  display: none;
+}
+
 .page-header__logo-image {
   display: block;
   margin: 0 auto;
@@ -5,4 +9,14 @@
 
 .page-footer__logo-link {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .page-header__logo-link {
+    display: none;
+  }
+
+  .page-header__logo-link--alternative {
+    display: block;
+  }
 }

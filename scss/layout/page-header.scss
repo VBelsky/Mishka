@@ -6,3 +6,14 @@
 .page-header__notification {
   display: none;
 }
+
+@media (min-width: 768px) {
+  .page-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 88px;
+  }
+
+
+}

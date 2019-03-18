@@ -24,3 +24,16 @@
   max-width: 250px;
   margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+  .main-banner {
+    padding-top: 163px;
+    padding-bottom: 370px;
+  }
+
+  .main-banner__title {
+    font-size: 43px;
+    line-height: 50px;
+    max-width: none;
+  }
+}
