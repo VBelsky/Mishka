@@ -1,0 +1,46 @@
+.categories {
+  position: relative;
+  width: 100%;
+  height: 216px;
+}
+
+.categories__button {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: left;
+  background-color: #63D1BB;
+  border: none;
+  bottom: 0;
+  width: 100%;
+  padding: 30px;
+  position: absolute;
+  transition: padding-bottom 0.1s;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #59D5BC;
+    outline: none;
+    padding-bottom: 35px;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #59D5BC;
+  }
+}
+
+.categories__button--left {
+  bottom: 108px;
+}
+
+.categories__button--right {
+  background-color: #56C3B2;
+
+  &:hover,
+  &:focus {
+    background-color: #46C1AE;
+  }
+}

@@ -1,0 +1,26 @@
+.main-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 75px;
+  padding-bottom: 120px;
+  position: relative;
+  background-color: #F1F1F1;
+  background-image: url('/img/main-banner-bg.jpg');
+  background-size: 180%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: -20px;
+  border-top: 1px solid #ECECEC;
+}
+
+.main-banner--inner-page {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.main-banner__title {
+  font-size: 27px;
+  text-align: center;
+  max-width: 250px;
+}

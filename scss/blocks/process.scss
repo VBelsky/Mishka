@@ -1,0 +1,23 @@
+.process {
+  margin: 30px;
+  border: 1px solid #EDEDED;
+}
+
+.process__title {
+  padding: 30px;
+}
+
+.process__video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-image: url('../img/video-small.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.process__info {
+  padding: 30px;
+}

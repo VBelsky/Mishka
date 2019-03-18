@@ -1,0 +1,36 @@
+.testimonials {
+  line-height: 30px;
+  margin: 30px;
+}
+
+.testimonials__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+
+.pagination-arrow {
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  width: 50%;
+  height: 52px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.testimonials__username {
+  font-size: 17px;
+  color: #444444;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: rgba(70, 193, 174, 0.3);
+  }
+}

@@ -1,0 +1,12 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 22px 30px;
+}
+
+.page-header__notification {
+  display: none;
+}
