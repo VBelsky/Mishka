@@ -11,3 +11,14 @@
   padding: 0;
   list-style: none;
 }
+
+@media (min-width: 768px) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 50%;
+  }
+}

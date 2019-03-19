@@ -1,5 +1,6 @@
 .main-product {
   margin: 30px 0;
+  position: relative;
 }
 
 .main-product__title {
@@ -25,4 +26,17 @@
 .main-product__price {
   padding: 25px 0;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .main-product__column {
+    width: 44%;
+  }
+
+  .main-product__image {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }

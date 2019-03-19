@@ -1,6 +1,7 @@
 .testimonials {
   line-height: 30px;
   margin: 30px 0;
+  position: relative;
 }
 
 .testimonials__pagination {
@@ -32,5 +33,21 @@
 
   &:active {
     color: rgba(70, 193, 174, 0.3);
+  }
+}
+
+@media (min-width: 768px) {
+  .testimonials__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 175px;
+  }
+
+  .testimonials__pagination {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
   }
 }
