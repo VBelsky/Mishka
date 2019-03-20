@@ -1,10 +1,10 @@
-.page-header__logo-link--alternative {
-  display: none;
-}
-
-.page-header__logo-image {
+.page-header__logo-image--mobile {
   display: block;
   margin: 0 auto;
+}
+
+.page-header__logo-image--tablet {
+  display: none;
 }
 
 .page-footer__logo-link {
@@ -12,11 +12,11 @@
 }
 
 @media (min-width: 768px) {
-  .page-header__logo-link {
+  .page-header__logo-image--mobile {
     display: none;
   }
 
-  .page-header__logo-link--alternative {
+  .page-header__logo-image--tablet {
     display: block;
   }
 }

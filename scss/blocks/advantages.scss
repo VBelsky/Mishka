@@ -1,5 +1,5 @@
 .advantages {
-  margin: 30px 0;
+  margin-bottom: 30px;
 }
 
 .advantages__title {
@@ -12,6 +12,10 @@
   list-style: none;
 }
 
+.advantages__item {
+  padding-top: 100px;
+}
+
 @media (min-width: 768px) {
   .advantages__list {
     display: flex;
@@ -20,5 +24,29 @@
 
   .advantages__item {
     width: 50%;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 5;
+    }
+
+    &:nth-child(4) {
+      order: 2;
+    }
+
+    &:nth-child(5) {
+      order: 3;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+    }
   }
 }

@@ -16,6 +16,7 @@
 .main-banner--inner-page {
   padding-top: 75px;
   padding-bottom: 75px;
+  background-image: none;
 }
 
 .main-banner__title {
@@ -28,9 +29,17 @@
 @media (min-width: 768px) {
   .main-banner {
     padding-top: 163px;
-    padding-bottom: 370px;
-    margin-left: 0;
-    margin-right: 0;
+    padding-bottom: 478px;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+
+  .main-banner--inner-page {
+    padding: 0;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .main-banner__title {

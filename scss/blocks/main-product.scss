@@ -33,6 +33,30 @@
     width: 44%;
   }
 
+  .main-product__headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    margin-bottom: 25px;
+  }
+
+  .main-product__title,
+  .main-product__subtitle {
+    margin-bottom: 0;
+  }
+
+  .main-product__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .main-product__subtitle {
+    max-width: 70px;
+    text-align: center;
+    line-height: 17px;
+  }
+
   .main-product__image {
     width: 50%;
     position: absolute;

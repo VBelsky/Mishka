@@ -11,6 +11,7 @@
 }
 
 .site-list__item-link {
+  color: #000000;
   text-decoration: none;
 
   &:hover {
@@ -38,6 +39,8 @@
   }
 
   .site-list__item--main {
+    font-size: 15px;
+    line-height: 24px;
     position: absolute;
     bottom: -45px;
     z-index: 1;

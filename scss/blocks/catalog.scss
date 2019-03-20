@@ -30,3 +30,24 @@
 .product__price {
   font-weight: 700;
 }
+
+@media (min-width: 768px) {
+  .product__card-as-link {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product__image,
+  .product__info {
+    width: 50%;
+  }
+
+  .product__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__price {
+    margin-top: auto;
+  }
+}

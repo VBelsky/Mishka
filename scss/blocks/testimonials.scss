@@ -1,6 +1,6 @@
 .testimonials {
   line-height: 30px;
-  margin: 30px 0;
+  margin-bottom: 30px;
   position: relative;
 }
 
@@ -37,17 +37,40 @@
 }
 
 @media (min-width: 768px) {
-  .testimonials__button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 175px;
+  .testimonials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
-  .testimonials__pagination {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin-bottom: 0;
+  .testimonials__item {
+    width: 50%;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+      width: 100%;
+    }
+
+    &:nth-child(3) {
+      order: 4;
+    }
+
+    &:nth-child(4) {
+      order: 5;
+      margin-bottom: 0;
+    }
+
+    &:nth-child(5) {
+      order: 2;
+    }
+  }
+
+  .testimonials__button {
+    width: 175px;
   }
 }

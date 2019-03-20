@@ -15,5 +15,12 @@
     height: 88px;
   }
 
-
+  .page-header__notification {
+    display: block;
+    margin: 0;
+    position: absolute;
+    bottom: -45px;
+    right: 50px;
+    z-index: 1;
+  }
 }

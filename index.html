@@ -10,31 +10,29 @@
 <body>
   <header class="page-header container">
     <a class="page-header__logo-link" href="#">
-      <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Мишка. Магазин предметов интерьера">
-    </a>
-    <a class="page-header__logo-link page-header__logo-link--alternative" href="#">
-      <img class="page-header__logo-image page-header__logo-image--alternative" src="http://placehold.it/112x46" alt="Мишка. Магазин предметов интерьера">
+      <img class="page-header__logo-image page-header__logo-image--mobile" src="http://placehold.it/86x35" alt="Мишка. Магазин предметов интерьера">
+      <img class="page-header__logo-image page-header__logo-image--tablet" src="http://placehold.it/112x46" alt="Мишка. Магазин предметов интерьера">
     </a>
     <nav class="page-header__navigation main-navigation">
       <button class="main-navigation__toggle" type="button">Открыть меню</button>
       <ul class="main-navigation__list site-list">
-        <li class="site-list__item site-list__item--main">
-          <a class="site-list__item-link headline-big" href="#">Каталог товаров</a>
+        <li class="site-list__item site-list__item--main headline-big">
+          <a class="site-list__item-link" href="#">Каталог товаров</a>
         </li>
-        <li class="site-list__item site-list__item--main">
-          <a class="site-list__item-link headline-big" href="#">Вязание на заказ</a>
+        <li class="site-list__item site-list__item--main headline-big">
+          <a class="site-list__item-link" href="#">Вязание на заказ</a>
         </li>
-        <li class="site-list__item site-list__item--additional">
-          <a class="site-list__item-link headline-middle" href="#">Новые поступления</a>
+        <li class="site-list__item site-list__item--additional headline-middle">
+          <a class="site-list__item-link" href="#">Новые поступления</a>
         </li>
-        <li class="site-list__item site-list__item--additional">
-          <a class="site-list__item-link headline-middle" href="#">Распродажа</a>
+        <li class="site-list__item site-list__item--additional headline-middle">
+          <a class="site-list__item-link" href="#">Распродажа</a>
         </li>
-        <li class="site-list__item site-list__item--search">
-          <a class="site-list__item-link headline-big" href="#">Поиск по сайту</a>
+        <li class="site-list__item site-list__item--search headline-big">
+          <a class="site-list__item-link" href="#">Поиск по сайту</a>
         </li>
-        <li class="site-list__item site-list__item--cart">
-          <a class="site-list__item-link headline-big" href="#">Корзина: пока пуста</a>
+        <li class="site-list__item site-list__item--cart headline-big">
+          <a class="site-list__item-link" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
@@ -50,8 +48,10 @@
       <button class="categories__button categories__button--right" type="button">Детские<br>игрушки</button>
     </div>
     <section class="main-product">
-      <h2 class="main-product__title headline-large">Вязаные корзинки</h2>
-      <h3 class="main-product__subtitle headline-big">Товар недели</h3>
+      <div class="main-product__headline">
+        <h2 class="main-product__title headline-large">Вязаные корзинки</h2>
+        <h3 class="main-product__subtitle headline-big">Товар недели</h3>
+      </div>
       <p class="main-product__description main-product__column">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
       <table class="main-product__details product-details-table main-product__column">
         <tbody>
@@ -97,15 +97,17 @@
       </ul>
     </section>
     <section class="testimonials">
-      <h2 class="testimonials__title headline-large">Отзывы:</h2>
-      <p class="testimonials__content">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-      <p class="testimonials__author headline-big">Анастасия Красильникова</p>
-      <a class="testimonials__username" href="#" >@misssssiskras</a>
-      <div class="testimonials__pagination">
+      <h2 class="testimonials__item testimonials__title headline-large">Отзывы:</h2>
+      <p class="testimonials__item testimonials__content">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+      <div class="testimonials__item testimonials__author">
+        <p class="testimonials__author headline-big">Анастасия Красильникова</p>
+        <a class="testimonials__username" href="#" >@misssssiskras</a>
+      </div>
+      <div class="testimonials__item testimonials__pagination">
         <button class="pagination-arrow pagination-arrow__previous" type="button" aria-label="Предыдущий отзыв"></button>
         <button class="pagination-arrow pagination-arrow__next" type="button" aria-label="Следующий отзыв"></button>
       </div>
-      <button class="testimonials__button common-button" type="button">Написать</button>
+      <button class="testimonials__item testimonials__button common-button" type="button">Написать</button>
     </section>
     <section class="contacts">
       <div class="contact-info">

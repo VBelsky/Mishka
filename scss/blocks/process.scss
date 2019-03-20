@@ -4,6 +4,7 @@
 }
 
 .process__title {
+  margin: 0;
   padding: 30px;
 }
 
@@ -16,8 +17,34 @@
   background-image: url('../img/video-small.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .process__info {
   padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .process {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .process__item {
+    &:nth-child(1) {
+      order: 2;
+    }
+
+    &:nth-child(2) {
+      order: 1;
+    }
+
+    &:nth-child(3) {
+      order: 3;
+    }
+  }
+
+  .process__video {
+    height: 455px;
+  }
 }
