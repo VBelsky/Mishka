@@ -29,3 +29,11 @@
     border-bottom: 1px solid rgba(70, 193, 174, 0.3);
   }
 }
+
+@media (min-width: 768px) {
+  .contact-details-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
