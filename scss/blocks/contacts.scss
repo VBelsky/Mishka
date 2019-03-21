@@ -31,9 +31,53 @@
 }
 
 @media (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
   .contact-details-table {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .contacts__button {
+    width: 230px;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1250px) {
+  .contacts {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 105px;
+    height: 457px; //Временно
+  }
+
+  .contact-info,
+  .contacts__button {
+    margin-left: 16%;
+    width: 32%;
+  }
+
+  .contacts__button {
+    align-self: baseline;
+  }
+
+  .contact-details-table {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .map {
+    position: absolute;
+    width: 526px;
+    margin: 0;
+    right: 0;
+    top: 0;
   }
 }

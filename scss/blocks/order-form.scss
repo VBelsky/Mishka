@@ -101,11 +101,11 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-bottom: 50px;
   }
 
   .order-form__subtitle {
-    max-width: 167px;
-    width: 100%;
+    width: 25%;
 
     &::after {
       content: none;
@@ -128,5 +128,20 @@
   .order-form__footer {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .order-form__button {
+    width: 230px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .order-form__subtitle {
+    width: 16%;
+  }
+
+  .order-form__item--color {
+    width: 33%;
   }
 }

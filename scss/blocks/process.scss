@@ -48,3 +48,23 @@
     height: 455px;
   }
 }
+
+@media (min-width: 1250px) {
+  .process {
+    height: 455px; //Временно
+    padding-left: 682px;
+    position: relative;
+  }
+
+  .process__title,
+  .process__info {
+    padding-left: 80px;
+    padding-right: 58px;
+  }
+
+  .process__video {
+    position: absolute;
+    left: 0;
+    width: 682px;
+  }
+}

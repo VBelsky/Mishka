@@ -36,14 +36,18 @@ img {
 
 @media (min-width: 768px) {
   .container {
-    width: 668px;
+    width: 768px;
     padding: 0 50px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   .container {
-    width: 1050px;
+    width: 1250px;
     padding: 0 100px;
+  }
+
+  .container--inner-page {
+    padding: 0 50px;
   }
 }

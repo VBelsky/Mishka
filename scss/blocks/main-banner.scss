@@ -4,7 +4,7 @@
   position: relative;
   background-color: #F1F1F1;
   background-image: url('/img/main-banner-bg.jpg');
-  background-size: 180%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: -20px;
@@ -29,9 +29,9 @@
 @media (min-width: 768px) {
   .main-banner {
     padding-top: 163px;
-    padding-bottom: 478px;
     margin-left: -50px;
     margin-right: -50px;
+    height: 745px; //Возможно временно
   }
 
   .main-banner--inner-page {

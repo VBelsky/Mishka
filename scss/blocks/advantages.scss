@@ -17,6 +17,10 @@
 }
 
 @media (min-width: 768px) {
+  .advantages {
+    margin-bottom: 80px;
+  }
+
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
@@ -48,5 +52,12 @@
     &:nth-child(6) {
       order: 6;
     }
+  }
+}
+
+@media (min-width: 1250px) {
+  .advantages {
+    margin-left: 16%;
+    margin-right: 16%;
   }
 }

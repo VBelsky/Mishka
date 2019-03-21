@@ -20,3 +20,12 @@
     display: block;
   }
 }
+
+@media (min-width: 1250px) {
+  .page-header__logo-link {
+    position: absolute;
+    top: 21px;
+    left: 50%;
+    margin-left: -56px;
+  }
+}
