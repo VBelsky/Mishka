@@ -3,12 +3,12 @@
   border: 1px solid #EDEDED;
 }
 
-.process__title {
+.process__item--title {
   margin: 0;
   padding: 30px;
 }
 
-.process__video {
+.process__item--video {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@
   background-size: cover;
 }
 
-.process__info {
+.process__item--info {
   padding: 30px;
 }
 
@@ -44,7 +44,7 @@
     }
   }
 
-  .process__video {
+  .process__item--video {
     height: 455px;
   }
 }
@@ -56,13 +56,13 @@
     position: relative;
   }
 
-  .process__title,
-  .process__info {
+  .process__item--title,
+  .process__item--info {
     padding-left: 80px;
     padding-right: 58px;
   }
 
-  .process__video {
+  .process__item--video {
     position: absolute;
     left: 0;
     width: 682px;
