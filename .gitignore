@@ -2,3 +2,5 @@ node_modules/
 css/
 js/script.min.js
 build/
+.stylelintrc.json
+.csscomb.json

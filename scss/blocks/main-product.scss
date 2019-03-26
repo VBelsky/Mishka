@@ -1,6 +1,6 @@
 .main-product {
-  margin-bottom: 30px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .main-product__title {
@@ -8,9 +8,9 @@
 }
 
 .main-product__subtitle {
-  color: #63D1BB;
-  text-transform: uppercase;
   margin-bottom: 30px;
+  color: #63d1bb;
+  text-transform: uppercase;
 }
 
 .main-product__description {
@@ -19,16 +19,18 @@
 }
 
 .main-product__details {
-  line-height: 20px;
   margin-bottom: 30px;
+  line-height: 20px;
 }
 
 .main-product__price {
-  text-align: center;
   margin-bottom: 34px;
+
+  text-align: center;
 }
 
 @media (min-width: 768px) {
+
   .main-product {
     height: 500px; //Временно
   }
@@ -56,8 +58,8 @@
 
   .main-product__subtitle {
     max-width: 70px;
-    text-align: center;
     line-height: 17px;
+    text-align: center;
   }
 
   .main-product__description,
@@ -66,14 +68,15 @@
   }
 
   .main-product__image {
-    width: 50%;
     position: absolute;
     right: 0;
     bottom: 0;
+    width: 50%;
   }
 }
 
 @media (min-width: 1250px) {
+
   .main-product {
     height: 636px; //Временно
     margin-bottom: 100px;
@@ -91,8 +94,8 @@
   }
 
   .main-product__subtitle {
-    max-width: 16%;
     width: 100%;
+    max-width: 16%;
   }
 
   .main-product__title {

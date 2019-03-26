@@ -8,6 +8,7 @@
 }
 
 @media (min-width: 768px) {
+
   .page-header {
     display: flex;
     justify-content: flex-start;
@@ -16,11 +17,11 @@
   }
 
   .page-header__notification {
+    position: absolute;
+    right: 50px;
+    bottom: -45px;
+    z-index: 1;
     display: block;
     margin: 0;
-    position: absolute;
-    bottom: -45px;
-    right: 50px;
-    z-index: 1;
   }
 }

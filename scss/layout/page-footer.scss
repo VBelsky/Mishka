@@ -1,6 +1,6 @@
 .page-footer {
-  background-color: #F1F1F1;
   padding: 30px 0;
+  background-color: #f1f1f1;
 }
 
 .page-footer__development {
@@ -10,14 +10,15 @@
 }
 
 .page-footer__developed-by {
+  margin: 0;
+  color: #000000;
   font-size: 19px;
   font-weight: 700;
   line-height: 21px;
-  color: #000000;
-  margin: 0;
 }
 
 @media (min-width: 768px) {
+
   .page-footer {
     display: flex;
     justify-content: space-between;

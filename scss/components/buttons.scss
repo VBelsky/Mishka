@@ -1,27 +1,27 @@
 .common-button {
-  font-family: 'Open Sans', Arial, sans-serif;
+  width: 100%;
+  height: 52px;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+  color: #444444;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
-  color: #444444;
   text-transform: uppercase;
-  background-color: #ffffff;
-  border: 2px solid #444444;
-  width: 100%;
-  height: 52px;
-  box-sizing: border-box;
-  cursor: pointer;
   transition: 0.2s;
+  cursor: pointer;
+  box-sizing: border-box;
 
   &:hover,
   &:focus {
-    color: #ffffff;
     background-color: #444444;
+    color: #ffffff;
     outline: none;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
     background-color: #444444;
+    color: rgba(255, 255, 255, 0.3);
   }
 }

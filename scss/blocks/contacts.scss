@@ -3,8 +3,8 @@
 }
 
 .contact-info__details {
-  line-height: 30px;
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .contact-info__title {
@@ -12,25 +12,26 @@
 }
 
 .contact-details-table__email {
+  display: inline-block;
+  border-bottom: 1px solid #62d1ba;
   color: #444444;
   text-decoration: none;
-  display: inline-block;
   vertical-align: middle;
-  border-bottom: 1px solid #62D1BA;
   cursor: pointer;
 
   &:hover {
+    border-bottom: 1px solid #46c1ae;
     color: #46c1ae;
-    border-bottom: 1px solid #46C1AE;
   }
 
   &:active {
-    color: rgba(70, 193, 174, 0.3);
     border-bottom: 1px solid rgba(70, 193, 174, 0.3);
+    color: rgba(70, 193, 174, 0.3);
   }
 }
 
 @media (min-width: 768px) {
+
   .contacts {
     display: flex;
     flex-direction: column;
@@ -50,18 +51,19 @@
 }
 
 @media (min-width: 1250px) {
+
   .contacts {
+    position: relative;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: relative;
-    margin-bottom: 105px;
     height: 457px; //Временно
+    margin-bottom: 105px;
   }
 
   .contact-info,
   .contacts__button {
-    margin-left: 16%;
     width: 32%;
+    margin-left: 16%;
   }
 
   .contacts__button {
@@ -75,9 +77,9 @@
 
   .map {
     position: absolute;
+    top: 0;
+    right: 0;
     width: 526px;
     margin: 0;
-    right: 0;
-    top: 0;
   }
 }
