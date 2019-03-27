@@ -1,5 +1,5 @@
 .catalog {
-  margin: 30px;
+  margin: 30px 0;
 }
 
 .catalog__list {
@@ -9,8 +9,8 @@
 }
 
 .catalog__item {
-  border: 1px solid #EDEDED;
   margin-bottom: 30px;
+  border: 1px solid #ededed;
 }
 
 .product__card-as-link {
@@ -29,4 +29,53 @@
 
 .product__price {
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+
+  .product__card-as-link {
+    display: flex;
+    justify-content: space-between;
+    height: 334px; //Временно
+  }
+
+  .product__image,
+  .product__info {
+    width: 50%;
+  }
+
+  .product__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__price {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: 1250px) {
+
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    width: 30%;
+  }
+
+  .product__card-as-link {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .product__image,
+  .product__info {
+    width: 100%;
+  }
+
+  .product__info {
+    height: 197px; //Временно
+  }
 }

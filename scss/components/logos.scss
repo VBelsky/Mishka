@@ -1,7 +1,33 @@
-.page-header__logo-image {
+.page-header__logo-image--mobile {
   display: block;
+  margin: 0 auto;
+}
+
+.page-header__logo-image--tablet {
+  display: none;
 }
 
 .page-footer__logo-link {
   display: none;
+}
+
+@media (min-width: 768px) {
+
+  .page-header__logo-image--mobile {
+    display: none;
+  }
+
+  .page-header__logo-image--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 1250px) {
+
+  .page-header__logo-link {
+    position: absolute;
+    top: 21px;
+    left: 50%;
+    margin-left: -56px;
+  }
 }

@@ -1,10 +1,10 @@
 .contacts {
-  margin: 30px;
+  margin-bottom: 30px;
 }
 
 .contact-info__details {
-  line-height: 30px;
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .contact-info__title {
@@ -12,20 +12,74 @@
 }
 
 .contact-details-table__email {
+  display: inline-block;
+  border-bottom: 1px solid #62d1ba;
   color: #444444;
   text-decoration: none;
-  display: inline-block;
   vertical-align: middle;
-  border-bottom: 1px solid #62D1BA;
   cursor: pointer;
 
   &:hover {
+    border-bottom: 1px solid #46c1ae;
     color: #46c1ae;
-    border-bottom: 1px solid #46C1AE;
   }
 
   &:active {
-    color: rgba(70, 193, 174, 0.3);
     border-bottom: 1px solid rgba(70, 193, 174, 0.3);
+    color: rgba(70, 193, 174, 0.3);
+  }
+}
+
+@media (min-width: 768px) {
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  .contact-details-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contacts__button {
+    width: 230px;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1250px) {
+
+  .contacts {
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 457px; //Временно
+    margin-bottom: 105px;
+  }
+
+  .contact-info,
+  .contacts__button {
+    width: 32%;
+    margin-left: 16%;
+  }
+
+  .contacts__button {
+    align-self: baseline;
+  }
+
+  .contact-details-table {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 526px;
+    margin: 0;
   }
 }

@@ -1,16 +1,16 @@
 .social-buttons {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .social-buttons__item {
   display: block;
-  background-color: red;
   width: 30px;
   height: 30px;
   margin-right: 10px;
+  background-color: #fc0000;
 }
