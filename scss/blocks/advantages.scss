@@ -13,7 +13,11 @@
 }
 
 .advantages__item {
-  padding-top: 100px;
+  margin-bottom: 10px;
+}
+
+.advantages__image {
+  min-height: 80px;
 }
 
 @media (min-width: 768px) {

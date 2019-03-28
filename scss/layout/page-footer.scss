@@ -11,10 +11,17 @@
 
 .page-footer__developed-by {
   margin: 0;
+  margin-right: 30px;
   color: #000000;
   font-size: 19px;
   font-weight: 700;
   line-height: 21px;
+}
+
+.page-footer__developer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 768px) {

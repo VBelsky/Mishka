@@ -20,6 +20,10 @@
   box-sizing: border-box;
 }
 
+.pagination-arrow__image--rotate {
+  transform: rotate(180deg);
+}
+
 .testimonials__username {
   display: inline-block;
   color: #444444;

@@ -10,6 +10,9 @@
 .categories__button {
   position: absolute;
   bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 30px;
   border: none;
