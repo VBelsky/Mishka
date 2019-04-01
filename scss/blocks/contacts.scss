@@ -1,14 +1,24 @@
 .contacts {
-  margin-bottom: 30px;
-}
-
-.contact-info__details {
   margin-bottom: 40px;
-  line-height: 30px;
 }
 
 .contact-info__title {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+}
+
+.contact-info__details {
+  margin-bottom: 36px;
+  line-height: 30px;
+  border-spacing: 0;
+}
+
+.contact-details-table {
+  vertical-align: baseline;
+}
+
+.contact-details-table__title {
+  width: 98px;
+  padding: 15px 0;
 }
 
 .contact-details-table__email {

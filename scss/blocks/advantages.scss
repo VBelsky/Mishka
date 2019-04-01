@@ -1,5 +1,5 @@
 .advantages {
-  margin-bottom: 30px;
+  margin-bottom: 55px;
 }
 
 .advantages__title {
@@ -13,11 +13,15 @@
 }
 
 .advantages__item {
-  margin-bottom: 10px;
+  position: relative;
+  margin-bottom: 27px;
+  padding-top: 56px;
 }
 
 .advantages__image {
-  min-height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @media (min-width: 768px) {

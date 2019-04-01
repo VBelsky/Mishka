@@ -1,6 +1,14 @@
 .page-footer {
-  padding: 30px 0;
+  padding: 29px 0;
   background-color: #f1f1f1;
+}
+
+.page-footer__wrapper {
+  margin-right: 30px;
+  margin-bottom: 22px;
+  margin-left: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .page-footer__development {
@@ -11,7 +19,7 @@
 
 .page-footer__developed-by {
   margin: 0;
-  margin-right: 30px;
+  margin-right: 26px;
   color: #000000;
   font-size: 19px;
   font-weight: 700;
