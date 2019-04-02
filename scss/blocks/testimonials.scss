@@ -44,8 +44,22 @@
   height: 52px;
   border: 1px solid #ececec;
   background-color: #ffffff;
+  transition: 0.2s;
   cursor: pointer;
   box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover > .pagination-arrow__image,
+  &:focus > .pagination-arrow__image {
+    fill: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active > .pagination-arrow__image {
+    fill: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .pagination-arrow__image--rotate {

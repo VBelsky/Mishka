@@ -1,6 +1,6 @@
 .page-header__logo-link {
   display: block;
-  padding: 22px 0;
+  padding: 21px 0;
 }
 
 .page-header__logo-image--mobile {
@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 
-.page-header__logo-image--tablet {
+.page-header__logo-image--desctop {
   display: none;
 }
 
@@ -22,7 +22,7 @@
     display: none;
   }
 
-  .page-header__logo-image--tablet {
+  .page-header__logo-image--desctop {
     display: block;
   }
 }
