@@ -48,10 +48,42 @@
     margin-bottom: 60px;
   }
 
+  .contact-info {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      right: 0;
+      width: 47px;
+      height: 81px;
+      background-image: url("/img/flag.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .contact-info__title {
+    margin-bottom: 34px;
+  }
+
+  .contact-info__details {
+    width: 100%;
+    margin-bottom: 55px;
+    font-size: 17px;
+  }
+
   .contact-details-table {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+  }
+
+  .contact-details-table__title {
+    width: 72px;
+  }
+
+  .contact-details-table__row {
+    width: 50%;
   }
 
   .contacts__button {

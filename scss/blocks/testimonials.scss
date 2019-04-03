@@ -87,9 +87,22 @@
   .testimonials {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 147px;
+    margin-left: -50px;
+    padding-top: 75px;
+    padding-left: 50px;
+    background-image: url("/img/testimonials-background.jpg");
+    background-repeat: no-repeat;
+
+    &::after {
+      bottom: -88px;
+      left: 0;
+      width: calc(100% + 100px);
+      height: 22px;
+      margin-left: -50px;
+      background-size: 100% 100%;
+    }
   }
 
   .testimonials__item {
@@ -119,12 +132,27 @@
   }
 
   .testimonials__content {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    font-size: 17px;
   }
 
   .testimonials__button {
     width: 175px;
+  }
+
+  .testimonials__author {
+    margin-bottom: 45px;
+  }
+
+  .testimonials__pagination {
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .pagination-arrow {
+    width: 26%;
+    border: none;
   }
 }
 
