@@ -107,7 +107,7 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--names">
           <div class="order-form__block">
             <legend class="order-form__subtitle">Фио</legend>
             <ul class="order-form__list">
@@ -126,13 +126,17 @@
             </ul>
           </div>
         </fieldset>
-        <div class="order-form__block">
-          <label class="order-form__subtitle" for="phone">Тел</label>
-          <input class="order-form__input order-form__input--phone" id="phone" type="text" name="phone" placeholder="+7 XXX XX XX*" required>
+        <div class="order-form__block order-form__block--contact">
+          <label class="order-form__subtitle order-form__subtitle--contact" for="phone">Тел</label>
+          <div class="order-form__input-wrapper">
+            <input class="order-form__input order-form__input--phone" id="phone" type="text" name="phone" placeholder="+7 XXX XX XX*" required>
+          </div>
         </div>
-        <div class="order-form__block">
-          <label class="order-form__subtitle" for="email">E-mail</label>
-          <input class="order-form__input order-form__input--email" id="email" type="email" name="e-mail" placeholder="Ваш Email*" required>
+        <div class="order-form__block order-form__block--contact">
+          <label class="order-form__subtitle order-form__subtitle--contact" for="email">E-mail</label>
+          <div class="order-form__input-wrapper">
+            <input class="order-form__input order-form__input--email" id="email" type="email" name="e-mail" placeholder="Ваш Email*" required>
+          </div>
         </div>
         <div class="order-form__block">
           <label class="order-form__subtitle" for="message">Доп</label>

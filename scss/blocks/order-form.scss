@@ -1,12 +1,13 @@
 .order-form {
-  margin: 30px 0;
+  margin-top: -7px;
+  margin-bottom: 55px;
   font-size: 17px;
   font-weight: 700;
 }
 
 .order-form__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 13px;
   font-weight: 400;
 }
@@ -17,22 +18,41 @@
   list-style: none;
 }
 
-.order-form__item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
 .order-form__fieldset {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   padding: 0;
   border: none;
+
+  &--names {
+    margin-bottom: 27px;
+  }
+}
+
+.order-form__item {
+  margin-bottom: 2px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--color {
+    margin-bottom: 21px;
+  }
+}
+
+.order-form__block {
+
+  &--contact {
+    margin-bottom: 14px;
+  }
 }
 
 .order-form__subtitle {
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   padding: 0;
   color: #63d1bb;
   text-transform: uppercase;
@@ -47,22 +67,31 @@
     margin-left: 20px;
     background-color: #63d1bb;
   }
+
+  &--contact {
+    margin-bottom: 15px;
+  }
 }
 
 .order-form__label {
   display: block;
-  padding: 8px 0;
+  padding: 11px 0;
   padding-left: 62px;
   color: #000000;
-}
+  line-height: 18px;
 
-.order-form__label--name {
-  padding-left: 0;
+  &--name {
+    padding-top: 6px;
+    padding-bottom: 12px;
+    padding-left: 0;
+  }
 }
 
 .order-form__input {
+  position: relative;
   width: 100%;
-  padding: 15px 0;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
   border: none;
   border-bottom: 2px solid #000000;
   color: #444444;
@@ -72,23 +101,30 @@
 
   &::placeholder {
     color: rgba(68, 68, 68, 0.3);
+    line-height: 18px;
   }
 
   &:hover,
   &:focus {
     border-color: #62d1ba;
   }
+
+  &[name="middle-name"] {
+    margin-bottom: 0;
+  }
 }
 
 .order-form__input--message {
-  height: 140px;
+  height: 144px;
+  margin-bottom: 6px;
   padding: 15px;
   border: 2px solid #000000;
   resize: none;
 }
 
 .order-form__description {
-  margin-bottom: 30px;
+  margin: 0;
+  margin-bottom: 27px;
   font-size: 14px;
   font-weight: 400;
 }
