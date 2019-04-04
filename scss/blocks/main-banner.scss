@@ -48,3 +48,11 @@
     line-height: 50px;
   }
 }
+
+@media (min-width: 1250px) {
+
+  .main-banner {
+    margin-right: -100px;
+    margin-left: -100px;
+  }
+}

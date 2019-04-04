@@ -125,27 +125,39 @@
 @media (min-width: 1250px) {
 
   .main-product {
-    height: 636px; //Временно
-    margin-bottom: 100px;
+    margin-bottom: 155px;
+
+    &::after {
+      bottom: -96px;
+      width: 100%;
+      margin-left: 0;
+    }
   }
 
   .main-product__column {
     width: 28%;
-    margin-left: 16%;
+    margin-left: 175px;
   }
 
   .main-product__headline {
     flex-direction: row-reverse;
     justify-content: flex-end;
-    padding-top: 125px;
-  }
-
-  .main-product__subtitle {
-    width: 100%;
-    max-width: 16%;
+    padding-top: 54px;
   }
 
   .main-product__title {
     z-index: 1;
+  }
+
+  .main-product__subtitle {
+    margin: 0 50px;
+  }
+
+  .main-product__description {
+    margin-bottom: 46px;
+  }
+
+  .main-product__details {
+    margin-bottom: 111px;
   }
 }

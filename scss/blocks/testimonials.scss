@@ -159,6 +159,30 @@
 @media (min-width: 1250px) {
 
   .testimonials {
-    margin-left: 16%;
+    margin-bottom: 162px;
+    margin-left: 0;
+    padding-top: 70px;
+    padding-left: 175px;
+
+    &::after {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  .testimonials__content {
+    margin-bottom: 40px;
+  }
+
+  .testimonials__author {
+    margin-bottom: 95px;
+  }
+
+  .testimonials__button {
+    margin-top: 10px;
+  }
+
+  .pagination-arrow {
+    width: 20%;
   }
 }

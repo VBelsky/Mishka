@@ -109,5 +109,13 @@
 
   .categories {
     margin-bottom: 70px;
+
+    &::after {
+      bottom: -18px;
+      width: calc(100% + 200px);
+      height: 34px;
+      margin-right: -100px;
+      margin-left: -100px;
+    }
   }
 }

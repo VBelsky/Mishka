@@ -102,19 +102,33 @@
     margin-bottom: 105px;
   }
 
-  .contact-info,
-  .contacts__button {
+  .contact-info {
     width: 32%;
-    margin-left: 16%;
+    margin-left: 175px;
+
+    &::before {
+      top: 62px;
+      left: -112px;
+    }
+  }
+
+  .contact-info__title {
+    margin-top: 70px;
   }
 
   .contacts__button {
+    width: 230px;
+    margin-left: 175px;
     align-self: baseline;
   }
 
   .contact-details-table {
     flex-direction: column;
     align-items: baseline;
+  }
+
+  .contact-details-table__row {
+    width: 100%;
   }
 
   .map {

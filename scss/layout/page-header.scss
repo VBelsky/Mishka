@@ -25,3 +25,10 @@
     margin: 0;
   }
 }
+
+@media (min-width: 1250px) {
+
+  .page-header__notification {
+    right: 100px;
+  }
+}
