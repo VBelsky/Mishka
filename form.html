@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="page-header container">
-    <a class="page-header__logo-link" href="#">
+    <a class="page-header__logo-link" href="index.html">
       <svg class="page-header__logo-image page-header__logo-image--mobile" width="86px" height="35px" viewBox="0 0 86 35">
         <use xlink:href="#logo-mobile"/>
       </svg>
@@ -23,7 +23,7 @@
     <nav class="page-header__navigation main-navigation">
       <ul class="main-navigation__list site-list">
         <li class="site-list__item site-list__item--main headline-big">
-          <a class="site-list__item-link" href="#">Каталог товаров</a>
+          <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item site-list__item--main headline-big">
           <a class="site-list__item-link" href="#">Вязание на заказ</a>
@@ -35,7 +35,7 @@
           <a class="site-list__item-link" href="#">Распродажа</a>
         </li>
         <li class="site-list__item site-list__item--search headline-big">
-          <a class="site-list__item-link site-list__item-link--search" href="#">
+          <a class="site-list__item-link site-list__item-link--search">
             <svg class="site-list__icon site-list__icon--search" width="18px" height="19px" viewBox="0 0 18 19">
               <use xlink:href="#icon-search"/>
             </svg>
@@ -66,43 +66,43 @@
             <legend class="order-form__subtitle">Тип</legend>
             <ul class="order-form__list">
               <li class="order-form__item">
-                <label class="order-form__label" for="accessory">Аксессуар для интерьера</label>
-                <input class="order-form__radio visually-hidden" id="accessory" type="radio" name="radio">
+                <input class="order-form__radio visually-hidden" id="accessory" type="radio" name="radio" checked>
+                <label class="order-form__label order-form__label--type" for="accessory">Аксессуар для интерьера</label>
               </li>
               <li class="order-form__item">
-                <label class="order-form__label" for="toy">Детская игрушка</label>
                 <input class="order-form__radio visually-hidden" id="toy" type="radio" name="radio">
+                <label class="order-form__label order-form__label--type" for="toy">Детская игрушка</label>
               </li>
             </ul>
           </div>
         </fieldset>
-        <fieldset class="order-form__fieldset">
+        <fieldset class="order-form__fieldset order-form__fieldset--color">
           <div class="order-form__block">
             <legend class="order-form__subtitle">Цвет</legend>
             <ul class="order-form__list order-form__list--color">
               <li class="order-form__item order-form__item--color">
-                <label class="order-form__label" for="white">Белый</label>
-                <input class="order-form__checkbox visually-hidden" id="white" type="checkbox" name="Белый">
+                <input class="order-form__checkbox visually-hidden" id="white" type="checkbox" name="Белый" checked>
+                <label class="order-form__label order-form__label--color" for="white">Белый</label>
               </li>
               <li class="order-form__item order-form__item--color">
-                <label class="order-form__label" for="gray">Серый</label>
-                <input class="order-form__checkbox visually-hidden" id="gray" type="checkbox" name="Серый">
+                <input class="order-form__checkbox visually-hidden" id="gray" type="checkbox" name="Серый" checked>
+                <label class="order-form__label order-form__label--color" for="gray">Серый</label>
               </li>
               <li class="order-form__item order-form__item--color">
-                <label class="order-form__label" for="tiffany">"Тиффани"</label>
                 <input class="order-form__checkbox visually-hidden" id="tiffany" type="checkbox" name="Тиффани">
+                <label class="order-form__label order-form__label--color" for="tiffany">"Тиффани"</label>
               </li>
               <li class="order-form__item order-form__item--color">
-                <label class="order-form__label" for="black">Черный</label>
                 <input class="order-form__checkbox visually-hidden" id="black" type="checkbox" name="Черный">
+                <label class="order-form__label order-form__label--color" for="black">Черный</label>
               </li>
               <li class="order-form__item order-form__item--color">
-                <label class="order-form__label" for="pink">Розовый</label>
                 <input class="order-form__checkbox visually-hidden" id="pink" type="checkbox" name="Розовый">
+                <label class="order-form__label order-form__label--color" for="pink">Розовый</label>
               </li>
               <li class="order-form__item order-form__item--color">
-                <label class="order-form__label" for="orange">Оранжевый</label>
                 <input class="order-form__checkbox visually-hidden" id="orange" type="checkbox" name="Оранжевый">
+                <label class="order-form__label order-form__label--color" for="orange">Оранжевый</label>
               </li>
             </ul>
           </div>
@@ -126,19 +126,23 @@
             </ul>
           </div>
         </fieldset>
-        <div class="order-form__block order-form__block--contact">
-          <label class="order-form__subtitle order-form__subtitle--contact" for="phone">Тел</label>
-          <div class="order-form__input-wrapper">
-            <input class="order-form__input order-form__input--phone" id="phone" type="text" name="phone" placeholder="+7 XXX XX XX*" required>
+        <div class="order-form__fieldset order-form__fieldset--contact">
+          <div class="order-form__block order-form__block--contact">
+            <label class="order-form__subtitle order-form__subtitle--contact" for="phone">Тел</label>
+            <input class="order-form__input order-form__input--contact" id="phone" type="text" name="phone" placeholder="+7 XXX XX XX*" required>
+            <svg class="order-form__icon" width="32px" height="24px" viewBox="0 0 25 24">
+              <use xlink:href="#tel"/>
+            </svg>
+          </div>
+          <div class="order-form__block order-form__block--contact">
+            <label class="order-form__subtitle order-form__subtitle--contact" for="email">E-mail</label>
+            <input class="order-form__input order-form__input--contact" id="email" type="email" name="e-mail" placeholder="Ваш Email*" required>
+            <svg class="order-form__icon" width="32px" height="32px" viewBox="0 0 32 32">
+              <use xlink:href="#mail"/>
+            </svg>
           </div>
         </div>
-        <div class="order-form__block order-form__block--contact">
-          <label class="order-form__subtitle order-form__subtitle--contact" for="email">E-mail</label>
-          <div class="order-form__input-wrapper">
-            <input class="order-form__input order-form__input--email" id="email" type="email" name="e-mail" placeholder="Ваш Email*" required>
-          </div>
-        </div>
-        <div class="order-form__block">
+        <div class="order-form__block order-form__block--additional">
           <label class="order-form__subtitle" for="message">Доп</label>
           <textarea class="order-form__input order-form__input--message" id="message" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
@@ -236,6 +240,16 @@
 
       <symbol id="icon-cart" width="21" height="18" viewBox="264.21 370.96 20.29 18.85">
         <path d="M283.75 378.19h-3.15l-3.41-6.81a.76.76 0 0 0-1.01-.34c-.37.19-.52.64-.34 1.01l3.07 6.14h-9.14l3.07-6.14c.19-.37.04-.82-.34-1.01a.763.763 0 0 0-1.01.34l-3.41 6.81h-3.15c-.41 0-.75.34-.75.75s.34.75.75.75h.16l.85 2.99c-.19.14-.32.35-.32.6 0 .4.31.71.7.74l1.66 5.79h12.7l1.66-5.79c.39-.03.7-.34.7-.74 0-.25-.13-.46-.32-.6l.85-2.99h.16c.41 0 .75-.34.75-.75a.726.726 0 0 0-.73-.75zm-4.18 10.12h-10.43l-1.22-4.28h12.88l-1.23 4.28zm1.65-5.78h-13.74l-.81-2.84h15.36l-.81 2.84z"/>
+      </symbol>
+
+      <symbol id="tel" width="25" height="24" viewBox="0 0 24.8 24.3">
+          <path d="M17.3 24.3h-1.1c-4.9-.6-8.5-2.9-11.1-5.8C2.5 15.6.4 11.9 0 6.8V5.4c.1-.9.5-1.5 1.1-2.1.6-.7 1.6-1.5 2.5-1.6.7 0 1.8.5 2.2 1.1.4.5.6 1.6.8 2.4.2.9.6 2 .5 2.8-.2 1.2-1.8 1.7-2.2 2.6 1.6 3.7 4.1 6.5 7.5 8.3.8-.5 1.6-1.9 2.8-1.9.4 0 1 .2 1.4.3.5.1.9.3 1.3.5.7.3 2 .6 2.4 1.2.4.6.7 1.6.6 2.2-.3 1.3-2.4 2.7-3.6 3.1zM12.5 1.5c5.9 0 10.8 4.8 10.8 10.8h1.5C24.8 5.5 19.3 0 12.5 0v1.5z"/>
+          <path d="M12.5 9.3v1.6c.8 0 1.4.6 1.4 1.4h1.6c0-1.6-1.3-3-3-3zM12.5 6.2c3.3 0 6.1 2.7 6.1 6.1h1.6c0-4.2-3.4-7.6-7.6-7.6v1.5z"/>
+
+      </symbol>
+
+      <symbol id="mail" width="32" height="32" viewBox="0 0 32 32">
+        <path d="M28 5H4C1.8 5 0 6.8 0 9v13c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V9c0-2.2-1.8-4-4-4zM2 10.3l7 5.3-7 5.3V10.3zM30 22c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2l7.8-5.9 4.4 3.3c.5.4 1.2.6 1.8.6.6 0 1.3-.2 1.8-.6l4.4-3.3L30 22zm0-1.2l-7-5.3 7-5.3v10.6zm-12.8-2.2c-.4.3-.8.4-1.2.4-.4 0-.9-.1-1.2-.4l-4.1-3.1-.8-.6L2 9c0-1.1.9-2 2-2h24c1.1 0 2 .9 2 2l-12.8 9.6z"/>
       </symbol>
     </svg>
   </body>
