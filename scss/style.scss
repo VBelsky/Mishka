@@ -1,7 +1,5 @@
 @charset 'utf-8';
 
-@import 'abstracts/variables';
-
 @import 'base/global';
 @import 'base/typography';
 
@@ -19,6 +17,7 @@
 @import 'components/buttons';
 @import 'components/logos';
 @import 'components/map';
+@import 'components/modal';
 @import 'components/social';
 
 @import 'layout/page-footer';
