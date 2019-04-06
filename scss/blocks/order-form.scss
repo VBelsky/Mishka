@@ -23,10 +23,6 @@
   margin-bottom: 29px;
   padding: 0;
   border: none;
-
-  &--names {
-    margin-bottom: 27px;
-  }
 }
 
 .order-form__item {
@@ -211,17 +207,12 @@
   .order-form__fieldset {
     margin-bottom: 50px;
 
-    &--color,
-    &--contact {
+    &--color {
       margin-right: -50px;
       margin-bottom: 48px;
       margin-left: -50px;
       padding: 50px;
       background-color: #f1f1f1;
-    }
-
-    &--color {
-      padding-bottom: 27px;
     }
   }
 
@@ -238,10 +229,6 @@
 
     &--contact:last-child {
       margin-bottom: 0;
-    }
-
-    &--additional {
-      margin-bottom: 50px;
     }
   }
 
@@ -282,6 +269,15 @@
       margin-bottom: auto;
     }
 
+    &--color {
+      width: 50%;
+    }
+
+    &--color:nth-child(5),
+    &--color:nth-child(6) {
+      margin-bottom: 0;
+    }
+
     &--color:nth-child(even) {
       padding-left: 11px;
     }
@@ -289,10 +285,6 @@
     &--color:nth-child(even) .order-form__label--color::before {
       margin-left: 11px;
     }
-  }
-
-  .order-form__item--color {
-    width: 50%;
   }
 
   .order-form__icon {
@@ -309,6 +301,10 @@
 
     &::placeholder {
       padding-left: 15px;
+    }
+
+    &--message {
+      margin-bottom: 50px;
     }
 
     &--message::placeholder {
@@ -399,13 +395,15 @@
 
   .order-form__block {
 
-    &--contact,
-    &--additional {
+    &--contact {
       margin-right: 175px;
     }
+  }
 
-    &--additional {
-      margin-bottom: 47px;
+  .order-form__input {
+
+    &--message {
+      margin-right: 175px;
     }
   }
 
