@@ -1,4 +1,4 @@
-.modal {
+.js-modal {
   position: fixed;
   top: 30%;
   left: 50%;
@@ -80,7 +80,7 @@
   text-transform: uppercase;
 }
 
-.modal__overlay {
+.js-modal__overlay {
   position: fixed;
   top: 0;
   left: 0;

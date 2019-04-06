@@ -16,11 +16,6 @@
 .product__image {
   display: block;
   width: 100%;
-
-  &--middle,
-  &--big {
-    display: none;
-  }
 }
 
 .product__info {
@@ -83,23 +78,10 @@
     justify-content: space-between;
   }
 
-  .product__image,
-  .product__info {
-    width: 50%;
-  }
-
-  .product__image {
-    display: block;
-
-    &--small,
-    &--big {
-      display: none;
-    }
-  }
-
   .product__info {
     display: flex;
     flex-direction: column;
+    width: 50%;
     padding-top: 25px;
   }
 
@@ -145,15 +127,6 @@
   .product__image,
   .product__info {
     width: 100%;
-  }
-
-  .product__image {
-    display: block;
-
-    &--small,
-    &--middle {
-      display: none;
-    }
   }
 
   .product__info {
