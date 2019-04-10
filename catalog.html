@@ -6,18 +6,25 @@
   <title>Мишка. Магазин предметов интерьера</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="import" href="/svg.html">
 </head>
 <body>
-  <header class="page-header container container--inner-page">
-    <a class="page-header__logo-link" href="#">
-      <img class="page-header__logo-image page-header__logo-image--mobile" src="http://placehold.it/86x35" alt="Мишка. Магазин предметов интерьера">
-      <img class="page-header__logo-image page-header__logo-image--tablet" src="http://placehold.it/112x46" alt="Мишка. Магазин предметов интерьера">
+  <header class="page-header container">
+    <a class="page-header__logo-link" href="index.html">
+      <svg class="page-header__logo-image page-header__logo-image--mobile" width="86px" height="35px" viewBox="0 0 86 35">
+        <use xlink:href="#logo-mobile"/>
+      </svg>
+      <svg class="page-header__logo-image page-header__logo-image--tablet" width="112px" height="46px" viewBox="0 0 112 46">
+        <use xlink:href="#logo-tablet"/>
+      </svg>
+      <svg class="page-header__logo-image page-header__logo-image--desctop" width="150px" height="72px" viewBox="0 0 150 72">
+        <use xlink:href="#logo-desctop"/>
+      </svg>
     </a>
     <nav class="page-header__navigation main-navigation">
-      <button class="main-navigation__toggle" type="button">Открыть меню</button>
       <ul class="main-navigation__list site-list">
         <li class="site-list__item site-list__item--main headline-big">
-          <a class="site-list__item-link" href="#">Каталог товаров</a>
+          <a class="site-list__item-link">Каталог товаров</a>
         </li>
         <li class="site-list__item site-list__item--main headline-big">
           <a class="site-list__item-link" href="#">Вязание на заказ</a>
@@ -29,88 +36,141 @@
           <a class="site-list__item-link" href="#">Распродажа</a>
         </li>
         <li class="site-list__item site-list__item--search headline-big">
-          <a class="site-list__item-link" href="#">Поиск по сайту</a>
-        </li>
-        <li class="site-list__item site-list__item--cart headline-big">
-          <a class="site-list__item-link" href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </nav>
-    <p class="page-header__notification">Бесплатная доставка по России</p>
-  </header>
-  <main class="page-main container container--inner-page">
-    <h1 class="visually-hidden">Мишка. Магазин предметов интерьера</h1>
-    <div class="main-banner main-banner--inner-page">
-      <h2 class="main-banner__title headline-large">Каталог товаров</h2>
-    </div>
-    <section class="catalog">
-      <ul class="catalog__list">
-        <li class="catalog__item product">
-          <a class="product__card-as-link" href="#">
-            <img class="product__image" src="img/product-1-small.jpg" alt="Вязаная игрушка - зайчик">
-            <div class="product__info">
-              <h3 class="product__title headline-big">Зайчик-попрыгайчик</h3>
-              <p class="product__description">Рост 30 см, вес 200 г</p>
-              <p class="product__price">1200 руб.</p>
-            </div>
+          <a class="site-list__item-link site-list__item-link--search" href="form.html">
+            <svg class="site-list__icon site-list__icon--search" width="18px" height="19px" viewBox="0 0 18 19">
+              <use xlink:href="#icon-search"/>
+            </svg>
+            <span class="site-list__name">Поиск по сайту</span>
           </a>
         </li>
-        <li class="catalog__item product">
-          <a class="product__card-as-link" href="#">
-            <img class="product__image" src="img/product-2-small.jpg" alt="Вязаная корзина для белья">
-            <div class="product__info">
-              <h3 class="product__title headline-big">Корзинка для белья</h3>
-              <p class="product__description">Диаметр 15 см, высота 10 см</p>
-              <p class="product__price">690 руб.</p>
-            </div>
-          </a>
-        </li>
-        <li class="catalog__item product">
-          <a class="product__card-as-link" href="#">
-            <img class="product__image" src="img/product-3-small.jpg" alt="Большая вязаная корзина для игрушек">
-            <div class="product__info">
-              <h3 class="product__title headline-big">Большая корзинка для игрушек</h3>
-              <p class="product__description">Диаметр 30 см, высота 30 см</p>
-              <p class="product__price">1500 руб.</p>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="process">
-      <h3 class="process__item process__item--title">Процесс производства</h3>
-      <div class="process__item process__item--video video-container">
-        <button class="video-container__button" type="button" aria-label="Просмотреть видео"></button>
+        <li class="site-list__item headline-big">
+          <a class="site-list__item-link" href="#">
+            <svg class="site-list__icon site-list__icon--cart" width="21px" height="18px" viewBox="0 0 21 18">
+              <use xlink:href="#icon-cart"/>
+            </svg>
+            <span>Корзина: пока пуста<span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="page-header__notification">Бесплатная доставка по России</p>
+    </header>
+    <main class="page-main container container--inner-page">
+      <h1 class="visually-hidden">Мишка. Магазин предметов интерьера</h1>
+      <div class="main-banner main-banner--inner-page">
+        <h2 class="main-banner__title headline-large">Каталог товаров</h2>
       </div>
-      <div class="process__item process__item--info">
-        <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="process__button common-button" type="button">Сделать заказ</button>
-      </div>
-    </section>
-  </main>
-  <footer class="page-footer container container--inner-page">
-    <a class="page-footer__logo-link" href="#">
-      <img class="page-footer__logo-image" src="http://placehold.it/102x34" alt="Мишка. Магазин предметов интерьера">
-    </a>
-    <div class="page-footer__wrapper">
-      <ul class="page-footer__social social-buttons">
-        <li class="social-buttons__item">
-          <a class="social-buttons__link social-buttons__link--instagram" href="#" aria-label="Инстаграм"></a>
-        </li>
-        <li class="social-buttons__item">
-          <a class="social-buttons__link social-buttons__link--facebook" href="#" aria-label="Фейсбук"></a>
-        </li>
-        <li class="social-buttons__item">
-          <a class="social-buttons__link social-buttons__link--twitter" href="#" aria-label="Твиттер"></a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__development">
-      <p class="page-footer__developed-by">Разработано:</p>
-      <a class="page-footer__developer-logo" href="#" aria-label="Логотип HTML Academy">
-        <img src="http://placehold.it/27x34" alt="Временная заглушка">
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item product">
+            <a class="product__card-as-link" href="#">
+              <picture>
+                <source srcset="img/product-1-big.jpg" media="(min-width: 1250px)"/>
+                <source srcset="img/product-1-middle.jpg" media="(min-width: 768px)"/>
+                <source srcset="img/product-1-small.jpg"/>
+                <img class="product__image" alt="image" src="img/product-1-small.jpg" alt="Вязаная игрушка - зайчик"/>
+              </picture>
+              <div class="product__info">
+                <h3 class="product__title headline-big">Зайчик-попрыгайчик</h3>
+                <p class="product__description">Рост 30 см, вес 200 г</p>
+                <p class="product__price">1 200 руб.</p>
+                <svg class="product__icon" width="21px" height="18px" viewBox="0 0 21 18">
+                  <use xlink:href="#icon-cart"/>
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="catalog__item product">
+            <a class="product__card-as-link" href="#">
+              <picture>
+                <source srcset="img/product-2-big.jpg" media="(min-width: 1250px)"/>
+                <source srcset="img/product-2-middle.jpg" media="(min-width: 768px)"/>
+                <source srcset="img/product-2-small.jpg"/>
+                <img class="product__image" alt="image" src="img/product-2-small.jpg" alt="Вязаная корзина для белья"/>
+              </picture>
+              <div class="product__info">
+                <h3 class="product__title headline-big">Корзинка для белья</h3>
+                <p class="product__description">Диаметр 15 см, высота 10 см</p>
+                <p class="product__price">690 руб.</p>
+                <svg class="product__icon" width="21px" height="18px" viewBox="0 0 21 18">
+                  <use xlink:href="#icon-cart"/>
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="catalog__item product">
+            <a class="product__card-as-link" href="#">
+              <picture>
+                <source srcset="img/product-3-big.jpg" media="(min-width: 1250px)"/>
+                <source srcset="img/product-3-middle.jpg" media="(min-width: 768px)"/>
+                <source srcset="img/product-3-small.jpg"/>
+                <img class="product__image" alt="image" src="img/product-3-small.jpg" alt="Большая вязаная корзина для игрушек"/>
+              </picture>
+              <div class="product__info">
+                <h3 class="product__title headline-big">Большая корзинка для игрушек</h3>
+                <p class="product__description">Диаметр 30 см, высота 30 см</p>
+                <p class="product__price">1 500 руб.</p>
+                <svg class="product__icon" width="21px" height="18px" viewBox="0 0 21 18">
+                  <use xlink:href="#icon-cart"/>
+                </svg>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="process">
+        <h3 class="process__item process__item--title">Процесс производства</h3>
+        <div class="process__item process__item--video video-container">
+          <svg class="video-container__button" width="101px" height="77px" viewBox="0 0 457.94 349.83">
+            <use xlink:href="#play"/>
+          </svg>
+        </div>
+        <div class="process__item process__item--info">
+          <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <button class="process__button common-button" type="button">Сделать заказ</button>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer container">
+      <a class="page-footer__logo-link" href="#">
+        <svg class="page-footer__logo" width="102px" height="34px" viewBox="0 0 101.61 34.06">
+          <use xlink:href="#logo-footer"/>
+        </svg>
       </a>
-    </div>
-  </footer>
-</body>
-</html>
+      <div class="page-footer__wrapper">
+        <ul class="page-footer__social social-buttons">
+          <li class="social-buttons__item">
+            <a class="social-buttons__link social-buttons__link--instagram" href="#" aria-label="Инстаграм">
+              <svg class="social-buttons__icon" width="22px" height="21px" viewBox="0 0 22 21">
+                <use xlink:href="#social-icon-instagram"/>
+              </svg>
+            </a>
+          </li>
+          <li class="social-buttons__item">
+            <a class="social-buttons__link social-buttons__link--facebook" href="#" aria-label="Фейсбук">
+              <svg class="social-buttons__icon" width="15px" height="28px" viewBox="0 0 15 28">
+                <use xlink:href="#social-icon-facebook"/>
+              </svg>
+            </a>
+          </li>
+          <li class="social-buttons__item">
+            <a class="social-buttons__link social-buttons__link--twitter" href="#" aria-label="Твиттер">
+              <svg class="social-buttons__icon" width="23px" height="20px" viewBox="0 0 23 20">
+                <use xlink:href="#social-icon-twitter"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__development">
+        <p class="page-footer__developed-by">Разработано:</p>
+        <a class="page-footer__developer-logo" href="#" aria-label="Логотип HTML Academy">
+          <svg class="page-footer__developer-icon" width="27px" height="34px" viewBox="0 0 27 34">
+            <use xlink:href="#logo-htmlacademy"/>
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <script src="js/script.min.js"></script>
+  </body>
+  </html>
