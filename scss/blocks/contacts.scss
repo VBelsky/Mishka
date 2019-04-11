@@ -1,5 +1,19 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   margin-bottom: 40px;
+
+  &::after {
+    content: "";
+    align-self: center;
+    position: absolute;
+    top: -42px;
+    width: 100vw;
+    height: 6px;
+    background-image: url("/img/wave.svg");
+    background-repeat: repeat-x;
+  }
 }
 
 .contact-info__title {
@@ -43,9 +57,12 @@
 @media (min-width: 768px) {
 
   .contacts {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 60px;
+
+    &::after {
+      top: -88px;
+      height: 22px;
+    }
   }
 
   .contact-info {
@@ -95,7 +112,6 @@
 @media (min-width: 1250px) {
 
   .contacts {
-    position: relative;
     justify-content: space-between;
     flex-wrap: wrap;
     height: 457px; //Временно
